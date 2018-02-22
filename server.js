@@ -7,6 +7,8 @@ var contacts = require('./routes/contacts');
 
 var app = express();
 
+var port = process.env.PORT || 8080;
+
 // views
 app.engine('html', require('ejs').renderFile);
 
@@ -22,6 +24,6 @@ app.use(bodyParser.urlencoded({
 app.use('/', index);
 app.use('/api', contacts);
 
-app.listen(8080, function() {
-  console.log('Server started....');
+app.listen(port, function() {
+  console.log(`Server started.... on port ${port}`);
 });
