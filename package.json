@@ -1,0 +1,26 @@
+{
+  "name": "contacts",
+  "version": "1.0.0",
+  "description": "CRUD app for contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adept07/contacts.git"
+  },
+  "author": "satya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adept07/contacts/issues"
+  },
+  "homepage": "https://github.com/adept07/contacts#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "mongojs": "^2.5.0"
+  }
+}

@@ -1,0 +1,40 @@
+.grid-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.grid-row, .grid-header {
+  grid-template-columns: minmax(max-content, 200px)  3fr 3fr 2fr;
+  display: grid;
+}
+
+.grid-row > div, .grid-header > div {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.grid-header {
+  background: #2196F3;
+  font-size: 22px;
+
+}
+
+.grid-row {
+  font-size: 18px;
+}
+
+.edit-form, .add-form {
+  background-color: #2196F3;
+  display: grid;
+  padding: 10px;
+  color: white;
+}
+.edit-form > div, .add-form > div {
+  padding: 5px;
+}
+
+.edit-form input, .add-form input {
+  border: 1px;
+  padding: 2px;
+}
